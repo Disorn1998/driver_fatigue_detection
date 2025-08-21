@@ -9,7 +9,7 @@ DEVICE_ID = "device_02"
 FIREBASE_URL = "https://driver-fatigue-detection-default-rtdb.asia-southeast1.firebasedatabase.app"
 firebase_connected = False
 
-#-- Firebase Configuration
+
 FIREBASE_CONFIG = {
     "apiKey": "AIzaSyC7Syu0aTE5WkAr7cMWdyllo5F6g--NsxM",
     "authDomain": "driver-fatigue-detection.firebaseapp.com",
@@ -137,4 +137,5 @@ def update_device_info(status_info_frame, text_color, card_bg, primary_color, su
         Label(device_info_frame, text=firebase_status, font=("Segoe UI", 10, "bold"), fg=firebase_color, bg=card_bg).pack(anchor="w")
     except Exception as e:
         print(f"[Firebase] Info update error: {e}")
+
 
