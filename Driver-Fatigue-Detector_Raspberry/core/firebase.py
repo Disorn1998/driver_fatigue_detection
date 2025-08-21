@@ -5,7 +5,7 @@ from tkinter import messagebox, Frame, Label
 import pyrebase
 
 #-- Firebase Configuration
-DEVICE_ID = "device_01"
+DEVICE_ID = "device_02"
 FIREBASE_URL = "https://driver-fatigue-detection-default-rtdb.asia-southeast1.firebasedatabase.app"
 firebase_connected = False
 
@@ -18,9 +18,9 @@ FIREBASE_CONFIG = {
 }
 
 # Device Configuration
-DEVICE_ID = "device_01"
-DRIVER_EMAIL = "driver01@gmail.com"
-DRIVER_PASSWORD = "Driver01"
+DEVICE_ID = "device_02"
+DRIVER_EMAIL = "driver02@gmail.com"
+DRIVER_PASSWORD = "Driver02"
 
 # Firebase Global Variables
 firebase_app = None
@@ -137,3 +137,4 @@ def update_device_info(status_info_frame, text_color, card_bg, primary_color, su
         Label(device_info_frame, text=firebase_status, font=("Segoe UI", 10, "bold"), fg=firebase_color, bg=card_bg).pack(anchor="w")
     except Exception as e:
         print(f"[Firebase] Info update error: {e}")
+
